@@ -9,4 +9,4 @@ Copy **show.php** to yourtheme/neatline-time/timelines
 Paste the code from **exhibit_iframe.html** where you want to embed a timeline, being sure to replace "YOUR TIMELINE URL" with the URL to  your Timeline's page.
 
 You should end up with something like this:
-![](https://github.com/sheepeeh/snippets/blob/master/omeka/plugins/neatline-time/timeline-iframe.PNG)
+![](https://raw.github.com/sheepeeh/snippets/master/omeka/plugins/neatline-time/timeline-iframe.PNG)
