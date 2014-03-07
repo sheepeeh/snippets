@@ -1,0 +1,35 @@
+/*These two styles make it easier to embed a timeline within an exhibit using an iframe*/
+
+#outeriframe
+{
+   width:940px;
+   height:250px;
+   overflow:hidden;
+   position:relative;
+}
+
+#inneriframe
+{
+   position:absolute;
+   top:-44px;
+   left:-170px;
+   width:1280px;
+   height:1200px;
+}
+
+/*This style allows you to invisibly add information for screenreaders*/
+
+.hidden {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+.exhibit-item .full {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
