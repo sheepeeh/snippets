@@ -2,7 +2,7 @@
 This method depends on *not* using the default Neatline Timeline pages for display. The iframe CSS could probably be finagled to work with the full page, but it is currently written for timelines of the default size on pages with no  other content.
 
 Copy the **CSS files** to yourtheme/css (or to your existing custom stylesheets)
-Be sure to add a queue_css statement for any new css files in header.php
+Be sure to add a queue_css statement for any new css files in header.php or at the top of the custom show.php, below.
 
 Copy **show.php** to yourtheme/neatline-time/timelines
 
