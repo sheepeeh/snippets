@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Edit Page "Test Page Timeline" &middot; Dr. Kathleen A. Merrigan Collection &middot; Omeka Admin</title>
+
+
+<!-- Plugin Stuff -->
+
+<!-- Stylesheets -->
+<link href="http://omeka-dev.nal.usda.gov/exhibits/merrigan/admin/themes/default/css/style.css" media="all" rel="stylesheet" type="text/css" >
+<link href="http://omeka-dev.nal.usda.gov/exhibits/merrigan/admin/themes/default/css/skeleton.css" media="all" rel="stylesheet" type="text/css" >
+<link href="http://omeka-dev.nal.usda.gov/exhibits/merrigan/application/views/scripts/css/jquery-ui.css" media="all" rel="stylesheet" type="text/css" >
+<link href="http://omeka-dev.nal.usda.gov/exhibits/merrigan/admin/themes/default/css/media/960min.css" media="only screen and (min-width: 960px)" rel="stylesheet" type="text/css" >
+<link href="http://omeka-dev.nal.usda.gov/exhibits/merrigan/admin/themes/default/css/media/768min.css" media="only screen and (min-width: 768px) and (max-width: 959px)" rel="stylesheet" type="text/css" >
+<link href="http://omeka-dev.nal.usda.gov/exhibits/merrigan/admin/themes/default/css/media/767max.css" media="only screen and (max-width: 767px)" rel="stylesheet" type="text/css" >
+<link href="http://omeka-dev.nal.usda.gov/exhibits/merrigan/admin/themes/default/css/media/479max.css" media="only screen and (max-width: 479px)" rel="stylesheet" type="text/css" >
+<link href="https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|Cabin:400,700,400italic,700italic" media="all" rel="stylesheet" type="text/css" >
+<link href="http://omeka-dev.nal.usda.gov/exhibits/merrigan/plugins/ExhibitBuilder/views/admin/css/exhibits.css" media="screen" rel="stylesheet" type="text/css" >
+<!-- JavaScripts -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript">
+    //<!--
+    jQuery.noConflict();    //-->
+</script>
+<script type="text/javascript" src="http://omeka-dev.nal.usda.gov/exhibits/merrigan/application/views/scripts/javascripts/vendor/respond.js"></script>
+<script type="text/javascript" src="http://omeka-dev.nal.usda.gov/exhibits/merrigan/application/views/scripts/javascripts/vendor/modernizr.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]> <script type="text/javascript" src="http://omeka-dev.nal.usda.gov/exhibits/merrigan/application/views/scripts/javascripts/vendor/selectivizr.js"></script><![endif]-->
+<script type="text/javascript" src="http://omeka-dev.nal.usda.gov/exhibits/merrigan/admin/themes/default/javascripts/globals.js"></script>
+<script type="text/javascript" src="http://omeka-dev.nal.usda.gov/exhibits/merrigan/application/views/scripts/javascripts/vendor/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript" src="http://omeka-dev.nal.usda.gov/exhibits/merrigan/plugins/ExhibitBuilder/views/admin/javascripts/exhibits.js"></script>
+</head>
+
+<body class="exhibits">
+
+<header>
+    <div class="container">
+        <div id="site-title" class="two columns">
+            <a href="http://omeka-dev.nal.usda.gov/exhibits/merrigan" target="_blank">Dr. Kathleen A. Merrigan Collection</a>
+        </div>
+
+        <nav>
+            <div id="global-nav">
+<ul class="navigation">
+    <li>
+        <a href="/exhibits/merrigan/admin/plugins">Plugins</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/appearance">Appearance</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/users">Users</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/settings">Settings</a>
+    </li>
+</ul>    
+</div>
+            
+            <ul id="user-nav">
+                                            <li>Welcome, <a href="/exhibits/merrigan/admin/users/edit/1">Rachel Donahue</a></li>
+                <li><a href="/exhibits/merrigan/admin/users/logout" id="logout">Log Out</a></li>
+                        </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container container-twelve">
+    <nav id="content-nav" class="two columns">
+    <ul class="navigation">
+    <li>
+        <a href="/exhibits/merrigan/admin/">Dashboard</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/items">Items</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/collections">Collections</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/item-types">Item Types</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/tags">Tags</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/simple-pages">Simple Pages</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/collection-tree">Collection Tree</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/neatline">Neatline</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/neatline-time">Neatline Time</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/csv-import">CSV Import</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/derivative-images">Derivative Images</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/geolocation/map/browse">Map</a>
+    </li>
+    <li class="active">
+        <a href="/exhibits/merrigan/admin/exhibits">Exhibits</a>
+    </li>
+</ul></nav>
+
+<nav>
+    <ul id="mobile-content-nav" class="quick-filter-wrapper">
+        <li><a href="#" tabindex="0">Edit Page "Test Page Timeline"</a>
+        <ul class="dropdown">
+    <li>
+        <a href="/exhibits/merrigan/admin/">Dashboard</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/items">Items</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/collections">Collections</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/item-types">Item Types</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/tags">Tags</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/simple-pages">Simple Pages</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/collection-tree">Collection Tree</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/neatline">Neatline</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/neatline-time">Neatline Time</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/csv-import">CSV Import</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/derivative-images">Derivative Images</a>
+    </li>
+    <li>
+        <a href="/exhibits/merrigan/admin/geolocation/map/browse">Map</a>
+    </li>
+    <li class="active">
+        <a href="/exhibits/merrigan/admin/exhibits">Exhibits</a>
+    </li>
+</ul>        </li>
+    </ul>    
+</nav>
+
+    <div class="subhead">
+        <form id="search-form" name="search-form" action="/exhibits/merrigan/admin/search" method="get">    <input type="text" name="query" id="query" value="" title="Search">        <fieldset id="advanced-form">
+        <fieldset id="query-types">
+            <p>Search using this query type:</p>
+            <label><input type="radio" name="query_type" id="query_type-keyword" value="keyword" checked="checked">Keyword</label><br>
+<label><input type="radio" name="query_type" id="query_type-boolean" value="boolean">Boolean</label><br>
+<label><input type="radio" name="query_type" id="query_type-exact_match" value="exact_match">Exact match</label>        </fieldset>
+                <fieldset id="record-types">
+            <p>Search only these record types:</p>
+                            <input type="checkbox" name="record_types[]" id="record_types-Item" value="Item" checked="checked"> Item<br>
+                            <input type="checkbox" name="record_types[]" id="record_types-File" value="File" checked="checked"> File<br>
+                    </fieldset>
+                <p><a href="/exhibits/merrigan/admin/items/search">Advanced Search (Items only)</a></p>
+    </fieldset>
+        <input type="submit" name="" value="Search"></form>
+                    <h1 class="section-title" title="Edit Page &quot;Test Page Timeline&quot;">Edit Page "Test Page Timeline"</h1>
+            </div>
+
+    <div id="content" class="ten columns offset-by-two omega">
+<div id="exhibits-breadcrumb">
+    <a href="/exhibits/merrigan/admin/exhibits">Exhibits</a> &gt;
+    <a href="/exhibits/merrigan/admin/exhibits/edit/5">Testing 3.0 again</a>  &gt;
+    Edit Page &quot;Test Page Timeline&quot;</div>
+<form id="exhibit-page-form" method="post">
+    <div class="seven columns alpha">
+    <fieldset>
+        <div class="field">
+            <div class="two columns alpha">
+            <label for="title">Page Title</label>            </div>
+            <div class="inputs five columns omega">
+            <input type="text" name="title" id="title" value="Test Page Timeline">            </div>
+        </div>
+        <div class="field">
+            <div class="two columns alpha">
+                <label for="slug">Page Slug</label>            </div>
+            <div class="inputs five columns omega">
+                <p class="explanation">No spaces or special characters allowed</p>
+                <input type="text" name="slug" id="slug" value="tttime">            </div>
+        </div>
+    </fieldset>
+    <fieldset id="block-container">
+        <h2>Content</h2>
+        <span class="collapse">Collapse All</span>
+        <span class="expand">Expand All</span>
+        <p class="instructions">To reorder blocks and items, click and drag them to the preferred location.</p>
+                <div class="add-block">
+            <h2>New Block</h2>
+            <div class="layout-select">
+                <h4>Select layout</h3>
+                <div class="layout-thumbs">
+                <div class="layout" id="file-text"><img src="http://omeka-dev.nal.usda.gov/exhibits/merrigan/plugins/ExhibitBuilder/views/shared/exhibit_layouts/file-text/layout.png"><span class="layout-name">File with Text</span><input type="radio" name="new-block-layout" value="file-text"></div><div class="layout" id="gallery"><img src="http://omeka-dev.nal.usda.gov/exhibits/merrigan/plugins/ExhibitBuilder/views/shared/exhibit_layouts/gallery/layout.png"><span class="layout-name">Gallery</span><input type="radio" name="new-block-layout" value="gallery"></div><div class="layout" id="text"><img src="http://omeka-dev.nal.usda.gov/exhibits/merrigan/plugins/ExhibitBuilder/views/shared/exhibit_layouts/text/layout.png"><span class="layout-name">Text</span><input type="radio" name="new-block-layout" value="text"></div><div class="layout" id="neatline-time"><img src="http://omeka-dev.nal.usda.gov/exhibits/merrigan/plugins/NeatlineTime/views/shared/exhibit_layouts/neatline-time/layout.png"><span class="layout-name">Neatline Time</span><input type="radio" name="new-block-layout" value="neatline-time"></div><div class="layout" id="geolocation-map"><img src="http://omeka-dev.nal.usda.gov/exhibits/merrigan/plugins/Geolocation/views/shared/exhibit_layouts/geolocation-map/layout.png"><span class="layout-name">Geolocation Map</span><input type="radio" name="new-block-layout" value="geolocation-map"></div><div class="file-text layout-description">Default layout features files justified to left or right with text displaying to the opposite side</div><div class="gallery layout-description">A gallery layout featuring file thumbnails</div><div class="text layout-description">Layout featuring a block of text without files</div><div class="neatline-time layout-description">Embed a NeatlineTime timeline.</div><div class="geolocation-map layout-description">Show attached items on a map</div>                <a class="add-link big button" href="#">Add new content block</a>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    </div>
+    
+    <div class="three columns omega">
+        <div id="save" class="panel">
+            <input type="submit" name="continue" id="continue" value="Save Changes" class="submit big green button">            <input type="submit" name="add-another-page" id="add-another-page" value="Save and Add Another Page" class="submit big green button">                            <a href="/exhibits/merrigan/exhibits/show/testing30/tttime" class="big blue button" target="_blank">View Public Page</a>                    </div>
+    </div>
+</form>
+<div id="attachment-panel" title="Attach an Item">
+    <div id="item-form">
+        <button type="button" id="revert-selected-item">Revert to Selected Item</button>
+        <button type="button" id="show-or-hide-search" class="show-form blue">
+            <span class="show-search-label">Show Search Form</span>
+            <span class="hide-search-label">Hide Search Form</span>
+        </button>
+        <a href="/exhibits/merrigan/admin/exhibit-builder/items/browse" id="view-all-items" class="green button">View All Items</a>
+        <div id="page-search-form" class="container-twelve">
+        
+<form id="search" action="/exhibits/merrigan/admin/exhibit-builder/items/browse" method="GET">
+    <div id="search-keywords" class="field">
+        <div class="two columns alpha">
+            <label for="keyword-search">Search for Keywords</label>        </div>
+        <div class="five columns omega inputs">
+        <input type="text" name="search" id="keyword-search" value="" size="40">        </div>
+    </div>
+    <div id="search-narrow-by-fields" class="field">
+        <div class="two columns alpha label"><label>Narrow by Specific Fields</label>
+        <button type="button" class="add_search">Add a Field</button>
+        </div>
+        <div class="five columns omega inputs">
+                    <div class="search-entry">
+                <select name="advanced[0][element_id]" id="advanced-0-element_id">
+    <option value="">Select Below </option>
+    <optgroup id="advanced-0-element_id-optgroup-Dublin Core" label="Dublin Core">
+    <option value="37">Contributor</option>
+    <option value="38">Coverage</option>
+    <option value="39">Creator</option>
+    <option value="40">Date</option>
+    <option value="41">Description</option>
+    <option value="42">Format</option>
+    <option value="43">Identifier</option>
+    <option value="44">Language</option>
+    <option value="45">Publisher</option>
+    <option value="46">Relation</option>
+    <option value="47">Rights</option>
+    <option value="48">Source</option>
+    <option value="49">Subject</option>
+    <option value="50">Title</option>
+    <option value="51">Type</option>
+    </optgroup>
+    <optgroup id="advanced-0-element_id-optgroup-Item Type Metadata" label="Item Type Metadata">
+    <option value="22">BCC</option>
+    <option value="36">Bibliography</option>
+    <option value="35">Biographical Text</option>
+    <option value="31">Birth Date</option>
+    <option value="32">Birthplace</option>
+    <option value="15">Bit Rate/Frequency</option>
+    <option value="53">Box</option>
+    <option value="21">CC</option>
+    <option value="12">Compression</option>
+    <option value="33">Death Date</option>
+    <option value="14">Director</option>
+    <option value="11">Duration</option>
+    <option value="17">Email Body</option>
+    <option value="29">Event Type</option>
+    <option value="54">Folder</option>
+    <option value="19">From</option>
+    <option value="3">Interviewee</option>
+    <option value="2">Interviewer</option>
+    <option value="27">Lesson Plan Text</option>
+    <option value="6">Local URL</option>
+    <option value="4">Location</option>
+    <option value="26">Materials</option>
+    <option value="23">Number of Attachments</option>
+    <option value="25">Objectives</option>
+    <option value="34">Occupation</option>
+    <option value="7">Original Format</option>
+    <option value="30">Participants</option>
+    <option value="10">Physical Dimensions</option>
+    <option value="13">Producer</option>
+    <option value="24">Standards</option>
+    <option value="18">Subject Line</option>
+    <option value="52">Table of Contents</option>
+    <option value="1">Text</option>
+    <option value="16">Time Summary</option>
+    <option value="20">To</option>
+    <option value="5">Transcription</option>
+    <option value="28">URL</option>
+    </optgroup>
+</select><select name="advanced[0][type]" id="advanced-0-type">
+    <option value="" selected="selected">Select Below </option>
+    <option value="contains">contains</option>
+    <option value="does not contain">does not contain</option>
+    <option value="is exactly">is exactly</option>
+    <option value="is empty">is empty</option>
+    <option value="is not empty">is not empty</option>
+</select><input type="text" name="advanced[0][terms]" id="advanced-0-terms" value="" size="20">                <button type="button" class="remove_search red button" disabled="disabled" style="display: none;">Remove Field</button>
+            </div>
+                </div>
+    </div>
+
+    <div id="search-by-range" class="field">
+        <div class="two columns alpha">
+        <label for="range">Search by a range of ID#s (example: 1-4, 156, 79)</label>        </div>
+        <div class="five columns omega inputs">
+        <input type="text" name="range" id="range" value="" size="40">        </div>
+    </div>
+
+    <div id="search-selects">
+        <div class="field">
+            <div class="two columns alpha">
+            <label for="collection-search">Search By Collection</label>            </div>
+            <div class="five columns omega inputs">
+            <select name="collection" id="collection-search">
+    <option value="">Select Below </option>
+    <option value="1">Kathleen Merrigan Demo Collection</option>
+    <option value="7">Placeholders</option>
+    <option value="22">Series I.: U.S. Senate Committee on Agriculture, Nutrition and Forestry</option>
+    <option value="23">Series II.:  Merrigan Consulting</option>
+    <option value="24">Series III.:  Henry A. Wallace Institute for Alternative Agriculture</option>
+    <option value="25">Series IV.:  U.S. Department of Agriculture (USDA), Agricultural Marketing Service (AMS).  </option>
+    <option value="26">Series V.:  Gerald J. and Dorothy R. Friedman School of Nutrition and Policy, Tufts University</option>
+    <option value="27">Series VI.:  Deputy Secretary, USDA</option>
+</select>            </div>
+        </div>
+
+        <div class="field">
+            <div class="two columns alpha">
+            <label for="item-type-search">Search By Type</label>            </div>
+            <div class="five columns omega inputs">
+            <select name="type" id="item-type-search">
+    <option value="">Select Below </option>
+    <option value="14">Dataset</option>
+    <option value="9">Email</option>
+    <option value="8">Event</option>
+    <option value="11">Hyperlink</option>
+    <option value="13">Interactive Resource</option>
+    <option value="10">Lesson Plan</option>
+    <option value="3">Moving Image</option>
+    <option value="4">Oral History</option>
+    <option value="12">Person</option>
+    <option value="15">Physical Object</option>
+    <option value="16">Service</option>
+    <option value="17">Software</option>
+    <option value="5">Sound</option>
+    <option value="6">Still Image</option>
+    <option value="1">Text</option>
+    <option value="7">Website</option>
+</select>            </div>
+        </div>
+
+                <div class="field">
+            <div class="two columns alpha">
+            <label for="user-search">Search By User</label>            </div>
+            <div class="five columns omega inputs">
+            <select name="user" id="user-search">
+    <option value="">Select Below </option>
+    <option value="1">Rachel Donahue</option>
+    <option value="2">Sara Lee</option>
+    <option value="3">Diane Wunsch</option>
+    <option value="4">Login for Mechanize scripts</option>
+</select>            </div>
+        </div>
+        
+        <div class="field">
+            <div class="two columns alpha">
+            <label for="tag-search">Search By Tags</label>            </div>
+            <div class="five columns omega inputs">
+            <input type="text" name="tags" id="tag-search" value="" size="40">            </div>
+        </div>
+    </div>
+
+        <div class="field">
+        <div class="two columns alpha">
+        <label for="public">Public/Non-Public</label>        </div>
+        <div class="five columns omega inputs">
+        <select name="public" id="public">
+    <option value="">Select Below </option>
+    <option value="1">Only Public Items</option>
+    <option value="0">Only Non-Public Items</option>
+</select>        </div>
+    </div>
+    
+    <div class="field">
+        <div class="two columns alpha">
+        <label for="featured">Featured/Non-Featured</label>        </div>
+        <div class="five columns omega inputs">
+        <select name="featured" id="featured">
+    <option value="">Select Below </option>
+    <option value="1">Only Featured Items</option>
+    <option value="0">Only Non-Featured Items</option>
+</select>        </div>
+    </div>
+    
+    <div class="seven columns alpha">
+    
+<div class="field">
+    <div class="two columns alpha">
+        <label for="geolocation-address">Geographic Address</label>    </div>
+    <div class="five columns omega inputs">
+        <input type="text" name="geolocation-address" id="geolocation-address" value="" size="40">        <input type="hidden" name="geolocation-latitude" value="" id="geolocation-latitude">        <input type="hidden" name="geolocation-longitude" value="" id="geolocation-longitude">    </div>
+</div>
+
+<div class="field">
+    <div class="two columns alpha">
+        <label for="geolocation-radius">Geographic Radius (miles)</label>    </div>
+    <div class="five columns omega inputs">
+        <input type="text" name="geolocation-radius" id="geolocation-radius" value="10" size="40">    </div>
+</div>
+
+<script type="text/javascript">
+(function ($) {
+    $(document).ready(function() {
+        var pauseForm = true;
+        $('#geolocation-address').parents('form').submit(function(event) {
+            // Find the geolocation for the address
+            if (!pauseForm) {
+                return;
+            }
+
+            var form = this;
+            var address = $('#geolocation-address').val();
+            if ($.trim(address).length > 0) {
+                event.preventDefault();
+                var geocoder = new google.maps.Geocoder();
+                geocoder.geocode({'address': address}, function(results, status) {
+                    // If the point was found, then put the marker on that spot
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        var gLatLng = results[0].geometry.location;
+                        // Set the latitude and longitude hidden inputs
+                        $('#geolocation-latitude').val(gLatLng.lat());
+                        $('#geolocation-longitude').val(gLatLng.lng());
+                        pauseForm = false;
+                        form.submit();
+                    } else {
+                        // If no point was found, give us an alert
+                        alert('Error: "' + address + '" was not found!');
+                    }
+                });
+            }
+        });
+    });
+})(jQuery);
+</script>
+<div class="field"><div class="two columns alpha"><label for="exhibit">Search by Exhibit</label></div><div class="five columns omega inputs"><select name="exhibit" id="exhibit">
+    <option value="">Select Below </option>
+    <option value="2">Shaping Legislation</option>
+    <option value="3">Trailblazing Local Food</option>
+    <option value="4">Championing the Organic Movement</option>
+    <option value="5">Testing 3.0 again</option>
+</select></div></div>    </div>
+    <input type="submit" class="submit big green button" name="submit_search" id="submit_search_advanced" value="Search for items" />
+</form>
+
+<script type="text/javascript" src="http://omeka-dev.nal.usda.gov/exhibits/merrigan/application/views/scripts/javascripts/items-search.js" charset="utf-8"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        Omeka.Search.activateSearchButtons();
+    });
+</script>
+        </div>
+        <div id="item-select"></div>
+    </div>
+    <div id="attachment-options">
+        <button type="button" id="change-selected-item">Change Selected Item</button>
+        <div class="options">
+            <div id="attachment-item-options"></div>
+            <div class="item-caption">
+                <p class="direction">Provide a caption.</p>
+                <div class="inputs">
+                    <textarea name="caption" id="attachment-caption" rows="3" cols="80"></textarea>                </div>
+            </div>
+        </div>
+        <div id="attachment-save">
+            <button type="submit" id="apply-attachment">Apply</button>
+        </div>
+    </div>
+    <div id="attachment-panel-loading"><span class="spinner"></span></div>
+</div>
+<script type="text/javascript">
+jQuery(document).ready(function () {
+    Omeka.ExhibitBuilder.setUpBlocks("\/exhibits\/merrigan\/admin\/exhibits\/block-form");
+    Omeka.ExhibitBuilder.setUpItemsSelect("\/exhibits\/merrigan\/admin\/exhibits\/attachment-item-options");
+    Omeka.ExhibitBuilder.setUpAttachments("\/exhibits\/merrigan\/admin\/exhibits\/attachment");
+        Omeka.ExhibitBuilder.setUpPageValidate("\/exhibits\/merrigan\/admin\/exhibits\/validate-page\/5");
+
+    Omeka.wysiwyg();
+    jQuery(document).on('exhibit-builder-refresh-wysiwyg', function (event) {
+        // Add tinyMCE to all textareas in the div where the item was attached.
+        jQuery(event.target).find('textarea').each(function () {
+            tinyMCE.execCommand('mceAddControl', false, this.id);
+        });
+    });
+});
+</script>
+    </div>
+
+    <footer class="container">
+        <div class="ten columns offset-by-two">
+                <p class="left"><a href="http://www.omeka.org" target="_blank">Powered by Omeka</a> | <a href="http://omeka.org/codex" target="_blank">Documentation</a> | <a href="http://omeka.org/forums/" target="_blank">Support Forums</a></p>
+        
+        <p class="right">Version 2.1.4                | <a href="/exhibits/merrigan/admin/system-info">System Information</a></p>
+                </div>
+    </footer>
+</div>
+<script type="text/javascript">
+jQuery(document).ready(function () {
+    Omeka.runReadyCallbacks();
+});
+</script>
+</body>
+
+</html>
